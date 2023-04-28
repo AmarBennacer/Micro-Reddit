@@ -5,9 +5,11 @@ Next steps:
 1- posts (associations) --> viewsn, likes
 issue with delete link -> to be fixed (front end problem)
 
-2- navbar --> a. articles(general), b.create an article conditions if signed_in
-3- comments (associations) --> disqus 
+2- navbar --> stop at
+Step 18: Style the Form Template
 
+
+3- comments (associations) --> disqus 
 * post can be edit only my author
 * post can only be submited by signed in users
 

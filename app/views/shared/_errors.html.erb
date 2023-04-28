@@ -1,0 +1,22 @@
+<% if @post.errors.any? %>
+ <div class="row">
+  <div class="col-xs-8 col-xs-offset-2">
+   <div class="panel panel-danger">
+    <div class="panel-heading">
+     <h2 class="panel-title">
+      <%= pluralize(@post.errors.count, "error") %>
+      prohibited this post from being saved:
+     </h2>
+     <div class="panel-body">
+      <ul>
+       <% @post.errors.full_messages.each do |msg|%>
+        <li><%= msg %></li>
+       <% end %>
+      </ul>
+     </div>
+    </div>
+   </div>
+  </div>
+ </div>
+<% end %>
+
