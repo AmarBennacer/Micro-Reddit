@@ -6,6 +6,6 @@ Rails.application.routes.draw do
  resources :about, only: [:index]
  resources :posts
 
- root 'post#index'
+ root 'posts#index'
 end
 

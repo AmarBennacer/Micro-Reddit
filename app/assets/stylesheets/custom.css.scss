@@ -17,20 +17,20 @@ $navbar-default-bg: black;
  color: #fff;
  text-decoration: none;
 }
-.article-actions {
+.post-actions {
  border-top: 1px solid #eaeaea;
  padding-top: 5px;
 }
-.article-title {
+.post-title {
  font-weight: bold;
  font-size: 1.5em;
 }
-.article-body {
+.post-body {
  border-top: 1px solid #eaeaea;
  padding-top: 15px;
  padding-bottom: 15px;
 }
-.article-meta-details {
+.post-meta-details {
  border-top: 1px solid #eaeaea;
  margin-top: 15px;
 }
@@ -40,4 +40,20 @@ $navbar-default-bg: black;
 .listing {
  list-style: none;
  padding-left: 0;
+}
+
+.button-group {
+    display: flex;
+    gap: 10px;
+  }
+
+.post-body {
+    border-top: 1px solid #eaeaea;
+    padding-top: 15px;
+    padding-bottom: 15px;
+   }
+
+.post-title {
+   font-weight: bold;
+    font-size: 1.5em;
 }
