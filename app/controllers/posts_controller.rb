@@ -1,4 +1,9 @@
 class PostsController < ApplicationController
+
+    def index
+        @posts = Post.all
+    end
+
     def new
       @post = Post.new
     end
@@ -19,16 +24,16 @@ class PostsController < ApplicationController
     end
   
     def edit
-        @article = Article.find(params[:id])
+        @post = Post.find(params[:id])
       end
 
       def update
-        @article = Article.find(params[:id])
-        if @article.update(article_params)
-         flash[:notice] = "Article was updated"
-         redirect_to article_path(@article)
+        @post = Post.find(params[:id])
+        if @post.update(post_params)
+         flash[:notice] = "post was updated"
+         redirect_to post_path(@post)
         else
-         flash[:notice] = "Article was not updated"
+         flash[:notice] = "post was not updated"
          render 'edit'
         end
       end
