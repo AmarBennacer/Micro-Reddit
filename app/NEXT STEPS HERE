@@ -1,0 +1,15 @@
+-- Micro-Reddit --
+
+Next steps:
+0- users --> devise done 
+1- posts (associations) --> viewsn, likes
+ stopped à edit -step 10
+ https://deallen7.medium.com/ruby-on-rails-app-build-blog-3d9975a999ae#ed96
+
+2- navbar --> a. articles(general), b.create an article conditions if signed_in
+3- comments (associations) --> disqus 
+
+* post can be edit only my author
+* post can only be submited by signed in users
+
+4- deploy
