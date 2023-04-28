@@ -7,3 +7,4 @@
 </p>
 
 <%= link_to 'Back', posts_path %>
+<%= link_to 'Delete', post_path(@post), data: { method: :delete, confirm: "Are you sure?" } %>

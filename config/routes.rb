@@ -6,6 +6,6 @@ Rails.application.routes.draw do
  resources :about, only: [:index]
  resources :posts
 
- root to: redirect('/users/sign_up')
+ #root 'post#index'
 end
 
