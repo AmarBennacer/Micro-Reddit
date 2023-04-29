@@ -13,6 +13,7 @@ class PostsController < ApplicationController
        end
   
     def create
+      #Rails.logger.info("Params: #{params.inspect}")
       @post = Post.new(post_params)
   
       if @post.save
