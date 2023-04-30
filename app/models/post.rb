@@ -1,4 +1,8 @@
 class Post < ActiveRecord::Base
     validates :title ,  presence: true
     validates :description ,  presence: true
-   end
+
+    has_many :posts
+    validates :user_id, presence: true
+
+end

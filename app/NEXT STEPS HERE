@@ -1,12 +1,24 @@
--- Micro-Reddit --
+/-- Micro-Reddit --
 
 Next steps:
 0- users --> devise done 
 1- posts (associations) --> viewsn, likes
 issue with delete link -> to be fixed (front end problem)
 
-2- navbar --> stop at
-Step 23: Creating Users + Create a Feature Branch in Github
+2- navbar --> stop at association 29/04
+Step 25: One-to-Many Association
+add id_user on post and all
+Show User Info in Articles
+Signing Up Users
+Signing Up Users in the Browser
+Editing Users
+Show User Profile Image
+Add Users Index Page
+Add Users to Articles Show Page
+Add Pagination to Views
+Add Log-in and Log-out Functionality
+Authentication Methods for Restricting Access
+
 
 3- comments (associations) --> disqus 
 * post can be edit only my author
