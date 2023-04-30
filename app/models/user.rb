@@ -5,8 +5,7 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable
 
 
-         belongs_to :user
-
+         has_many :posts
          before_save { self.email = email.downcase }
 
 

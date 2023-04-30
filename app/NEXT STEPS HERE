@@ -6,12 +6,8 @@ Next steps:
 issue with delete link -> to be fixed (front end problem)
 
 2- navbar --> stop at association 29/04
-Step 25: One-to-Many Association
-add id_user on post and all
-Show User Info in Articles
-Signing Up Users
-Signing Up Users in the Browser
-Editing Users
+Step 30: Show User Profile Image
+
 Show User Profile Image
 Add Users Index Page
 Add Users to Articles Show Page

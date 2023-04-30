@@ -15,7 +15,8 @@ class PostsController < ApplicationController
     def create
       #Rails.logger.info("Params: #{params.inspect}")
       @post = Post.new(post_params)
-  
+      @post.user = current_user
+
       if @post.save
         flash[:notice] = "post was successfully created"
         redirect_to post_path(@post)
