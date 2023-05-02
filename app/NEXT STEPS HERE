@@ -7,6 +7,7 @@ issue with delete link -> to be fixed (front end problem)
 
 2- navbar --> stop at association 29/04
 Step 30: Show User Profile Image
+usign devise ----- can we create show view?
 
 Show User Profile Image
 Add Users Index Page
@@ -21,3 +22,21 @@ Authentication Methods for Restricting Access
 * post can only be submited by signed in users
 
 4- deploy
+
+Step 30: Show User Profile Image
+http://localhost:3000/users/show
+show USER view
+
+<h1>User: <%= @user.email %></h1>
+
+<%= image_tag gravatar_url(@user.email) %>
+
+<h2>Articles</h2>
+<ul>
+  <% @articles.each do |article| %>
+    <li><%= link_to article.title, article_path(article) %></li>
+  <% end %>
+</ul>
+
+<%= debug(params) if Rails.env.development? %>
+

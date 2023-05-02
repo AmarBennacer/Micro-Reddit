@@ -104,6 +104,7 @@ GEM
     ffi (1.15.5)
     globalid (1.1.0)
       activesupport (>= 5.0)
+    gravatar (1.0)
     i18n (1.13.0)
       concurrent-ruby (~> 1.0)
     importmap-rails (1.1.6)
@@ -247,6 +248,7 @@ DEPENDENCIES
   capybara
   debug
   devise
+  gravatar
   importmap-rails
   jbuilder
   jquery-rails
