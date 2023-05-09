@@ -7,14 +7,14 @@ $navbar-default-bg: black;
 @import "bootstrap";
 #logo {
  float: left;
- font-size: 1.7em;
+ font-size: 1.7em; 
  color: white;
  text-transform: uppercase;
  letter-spacing: -1px;
  font-weight: bold;
 }
 #logo:hover {
- color: #fff;
+ color: red;
  text-decoration: none;
 }
 .post-actions {
@@ -56,4 +56,8 @@ $navbar-default-bg: black;
 .post-title {
    font-weight: bold;
     font-size: 1.5em;
+}
+
+.navbar-default .navbar-nav>li>a:hover {
+  color: red;
 }
