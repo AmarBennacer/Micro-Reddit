@@ -8,5 +8,8 @@ class User < ApplicationRecord
          has_many :posts
          before_save { self.email = email.downcase }
 
+  def admin?
+   admin
+  end
 
 end

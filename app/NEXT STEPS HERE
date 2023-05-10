@@ -6,37 +6,13 @@ Next steps:
 issue with delete link -> to be fixed (front end problem)
 
 2- navbar --> stop at association 29/04
-Step 30: Show User Profile Image
-usign devise ----- can we create show view?
+10/05/2023: Show User Profile Image
+-> add Authentication Methods for Restricting Access
+    * only signin usser can post
+    * only current user can edit/delte his/her own post
+    * admin can do them all(edit delete and other posts)
 
-Show User Profile Image
-Add Users Index Page
-Add Users to Articles Show Page
-Add Pagination to Views
-Add Log-in and Log-out Functionality
-Authentication Methods for Restricting Access
-
-
-3- comments (associations) --> disqus 
-* post can be edit only my author
-* post can only be submited by signed in users
-
-4- deploy
-
-Step 30: Show User Profile Image
-http://localhost:3000/users/show
-show USER view
-
-<h1>User: <%= @user.email %></h1>
-
-<%= image_tag gravatar_url(@user.email) %>
-
-<h2>Articles</h2>
-<ul>
-  <% @articles.each do |article| %>
-    <li><%= link_to article.title, article_path(article) %></li>
-  <% end %>
-</ul>
-
-<%= debug(params) if Rails.env.development? %>
-
+-> comments (associations) --> disqus 
+    * post can be edit only my author
+    * post can only be submited by signed in users
+-> deploy

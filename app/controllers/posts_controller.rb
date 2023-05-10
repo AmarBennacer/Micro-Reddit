@@ -1,8 +1,10 @@
 class PostsController < ApplicationController
+  before_action :authenticate_user!, except: [:index]
+  before_action :set_post, only: [:show, :edit, :update, :destroy]
+  before_action :authorize_user!, except: [:index, :new, :create]
 
     def index
       @posts = Post.paginate(page: params[:page], per_page: 3)
-
     end
 
     def new
@@ -55,5 +57,16 @@ class PostsController < ApplicationController
     def post_params
       params.require(:post).permit(:title, :description, :user_id)
     end
+
+    def set_post
+      @post = Post.find(params[:id])
+    end
+  
+    def authorize_user!
+      return if current_user.admin? || @post.user == current_user
+  
+      flash[:alert] = "You are not authorized to perform this action."
+      redirect_to root_path
+    end    
 end
   
