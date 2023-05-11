@@ -50,14 +50,12 @@ gem 'jquery-rails'
 gem 'bootstrap-sass', '~> 3.4.1'
 gem 'sassc-rails', '>= 2.1.0'
 
-# add paginate
+# added gems
 gem 'will_paginate'
 gem 'bootstrap-will_paginate'
-
-# add comments gems
-gem 'acts_as_commentable'
-
+gem 'devise'
 gem 'gravatar'
+
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
 # gem "image_processing", "~> 1.2"
 
@@ -76,7 +74,6 @@ group :development do
   # Speed up commands on slow machines / big apps [https://github.com/rails/spring]
   # gem "spring"
 
-  gem 'devise'
 
 end
 
