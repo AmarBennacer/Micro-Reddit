@@ -31,16 +31,15 @@ Please make sure to install the gems by running bundle install after configuring
 
 #### Screenshots:
 
-#homepage
-file:///home/bennacer/Pictures/Screenshots/Screenshot%20from%202023-05-11%2019-26-46.png
+#Homepage
+![homepage](https://github.com/AmarBennacer/Micro-Reddit/blob/main/screenshots/homepage.png)
 
 #Sign_up/Login
-file:///home/bennacer/Pictures/Screenshots/Screenshot%20from%202023-05-11%2019-30-28.png
+![sign_up/Login](https://github.com/AmarBennacer/Micro-Reddit/blob/main/screenshots/sign_up.png)
 
 #Show_View
-file:///home/bennacer/Pictures/Screenshots/Screenshot%20from%202023-05-11%2019-31-58.png
+![Show_view!](https://github.com/AmarBennacer/Micro-Reddit/blob/main/screenshots/show_view.png)
 
-![homepage!](/home/bennacer/Pictures/Screenshots/homepage.png)
 
 
 
