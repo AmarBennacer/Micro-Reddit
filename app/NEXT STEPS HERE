@@ -8,11 +8,14 @@ issue with delete link -> to be fixed (front end problem)
 2- navbar --> stop at association 29/04
 10/05/2023: Show User Profile Image
 -> add Authentication Methods for Restricting Access
-    * only signin usser can post
-    * only current user can edit/delte his/her own post
-    * admin can do them all(edit delete and other posts)
+    * only signin usser can post -done
+    * only current user can edit/delte his/her own post -done
+    * admin can do them all(edit delete and other posts) - done
 
--> comments (associations) --> disqus 
+-> comments (associations) --> (comments model from scratch) 
     * post can be edit only my author
     * post can only be submited by signed in users
+    --b delete button is not working 
+    * edit/delete comment by the creator only
+
 -> deploy

@@ -1,7 +1,7 @@
 class PostsController < ApplicationController
   before_action :authenticate_user!, except: [:index]
   before_action :set_post, only: [:show, :edit, :update, :destroy]
-  before_action :authorize_user!, except: [:index, :new, :create]
+  before_action :authorize_user!, except: [:index, :new, :create, :show]
 
     def index
       @posts = Post.paginate(page: params[:page], per_page: 3)
@@ -22,7 +22,7 @@ class PostsController < ApplicationController
 
       if @post.save
         flash[:notice] = "post was successfully created"
-        redirect_to post_path(@post)
+        redirect_to posts_path
       else
         render 'new'
       end
