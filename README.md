@@ -1,7 +1,8 @@
 # MICRO-REDDIT
 
 #### What is it ?
-This is a mini application built with Ruby on Rails. It allows users to create posts and comment on them, creating a small-scale social media platform. Here are the necessary steps to get the application up and running.
+
+This is a mini application built with Ruby on Rails. It allows users to create posts and comment on them, creating a small-scale social media platform. Here are the necessary steps to get the application up and running. This is part of the Forms Project in The Odin Project’s Ruby on Rails Curriculum. Find it at http://www.theodinproject.com.
 
 #### Ruby Version
 
