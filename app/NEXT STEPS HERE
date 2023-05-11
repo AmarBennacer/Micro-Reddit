@@ -16,6 +16,5 @@ issue with delete link -> to be fixed (front end problem)
     * post can be edit only my author
     * post can only be submited by signed in users
     --b delete button is not working 
-    * edit/delete comment by the creator only
-
+ ----   *missing edit/delete comment by its creator 
 -> deploy
